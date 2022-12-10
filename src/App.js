@@ -1,6 +1,26 @@
-import './App.css';
+import React, { useRef } from 'react'
+import { Typewriter } from 'react-simple-typewriter'
+//import "react-simple-typewriter/dist/index.css"
+import emailjs from '@emailjs/browser';
+import { toast, Toaster } from 'react-hot-toast';
+
 
 function App() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_2p42k4w', 'template_67qbxwv', form.current, 'lSpaElzdqGnerKafb')
+      .then((result) => {
+          console.log(result.text);
+          toast.success("Message Submitted Successfully")
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
 
   return (
     <>
@@ -48,7 +68,17 @@ function App() {
         <div className='h-[70vh] px-10' style={{ background: "#ffffff", opacity: 0.9 }}>
           <h1 className='text-2xl font-bold pt-[20vh]'>Hey, I'm
             <br />
-            <span className='text-4xl font-bold text-[#3b143e] hover:text-[#2c6d5d]'>ANIKA JUMANA KHANAM NISHAT</span></h1>
+            <span className='text-4xl font-bold hover:text-[#3b143e] text-[#2c6d5d]'>
+              <Typewriter
+                loop
+                cursor
+                cursorStyle='.'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={2000}
+                words={['ANIKA JUMANA KHANAM NISHAT', ""]}
+              />
+            </span></h1>
           <p>A MERN Stack Web Developer, passionate in building websites with smooth UX that leads to the goal successfully!</p>
 
           <a href='#projects' className="btn glass bg-[#264d43] hover:text-[#e69ceb] hover:bg-[#3b143e] my-4">Check out my Projects</a>
@@ -72,7 +102,6 @@ function App() {
               <li>Express.js</li>
               <li>MongoDB</li>
             </div>
-
 
             <p>
               Check out some of my works in the Projects section.
@@ -100,7 +129,47 @@ function App() {
 
       <section id="contact">
 
+        <div className="hero min-h-screen bg-base-200">
+          <div className="hero-content flex-col">
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl font-bold mb-5">Contact Me</h1>
+              
+            </div>
+            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+              <form className="card-body" ref={form} onSubmit={sendEmail}>
+
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Name</span>
+                  </label>
+                  <input type="text" name="userName" placeholder="name" className="input input-bordered" />
+                </div>
+                
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Email</span>
+                  </label>
+                  <input type="email" name="userEmail" placeholder="email" className="input input-bordered" />
+                </div>
+
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Message</span>
+                  </label>
+                  <textarea name="message" placeholder="message" className="input input-bordered" />
+                  
+                </div>
+                <div className="form-control mt-6">
+                  <input type="submit" value="Send" className="btn btn-primary" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </section>
+
+      <Toaster/>
 
     </>
   );
