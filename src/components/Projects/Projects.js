@@ -53,35 +53,42 @@ const Projects = () => {
 
 
     return (
-        <section className='grid grid-col-1 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-[75vw]'>
-            {
-                projectInfo.map(data =>
+        <section id="projects" className='pt-20 pb-32 bg-gradient-to-r from-[#7bb1a34d] to-[#ffff] font-serif' data-theme="fantasy">
+
+            <h1 className='text-center font-bold text-4xl my-10'>PROJECT SHOWCASE</h1>
+            <h3 className='text-2xl font-semibold text-[#1d5f4d] mb-5 ml-[15%]'>Let's see a few from My Works now!</h3>
 
 
-                    <Fade bottom>
-                        <div key={data.id} className="card bg-base-100 shadow-xl image-full w-[80%] mx-auto">
-                            <figure><img src={data.img} alt="" /></figure>
-                            <div className="card-body">
-                                <h2 className="card-title">{data.name}</h2>
-                                <p></p>
-                                <div className="card-actions justify-end gap-6">
+            <div className='grid grid-col-1 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-[75vw]'>
+                {
+                    projectInfo.map(data =>
 
 
-                                    <a href={data.githubLink}>
-                                        <FiGithub  className='h-8 w-8 text-[#e69ceb] hover:text-[#68eac9]'/>
-                                    </a>
+                        <Fade bottom key={data.id}>
+                            <div className="card bg-base-100 shadow-xl image-full w-[80%] mx-auto">
+                                <figure><img src={data.img} alt="" /></figure>
+                                <div className="card-body">
+                                    <h2 className="card-title">{data.name}</h2>
+                                    <p></p>
+                                    <div className="card-actions justify-end gap-6">
 
 
-                                    <a href={data.liveLink}><GoLinkExternal className='h-8 w-8 text-[#e69ceb] hover:text-[#68eac9]' />
-                                    </a>
+                                        <a href={data.githubLink}>
+                                            <FiGithub className='h-8 w-8 text-[#e69ceb] hover:text-[#68eac9]' />
+                                        </a>
 
 
+                                        <a href={data.liveLink}><GoLinkExternal className='h-8 w-8 text-[#e69ceb] hover:text-[#68eac9]' />
+                                        </a>
+
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </Fade>
-                )
-            }
+                        </Fade>
+                    )
+                }
+            </div>
         </section>
     );
 };
