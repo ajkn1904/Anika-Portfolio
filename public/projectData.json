@@ -5,6 +5,7 @@
         "img": "https://i.ibb.co/tsDwS1r/Screenshot-1.png",
         "liveLink": "https://second-look-1e813.web.app",
         "githubLink": "https://github.com/ajkn1904/second-look",
+        "intro": "This is a complete e-commerce website where people can sell their services.",
         "details":[
              "I have used JWT & Firebase authentication to make the user’s data secure & MongoDB to reserve data.", "There are 7 routes in total. Anyone can create/log in with google.", "User can add their services individually after login.", "User will be able to view the full image of the added service on click.", "They can review any of the services of the website and also edit or delete their reviews."
     ],
@@ -17,6 +18,7 @@
         "img": "https://i.ibb.co/hZLr0KL/Screenshot-2.png",
         "liveLink": "https://home-service-d7776.web.app",
         "githubLink": "https://github.com/ajkn1904/home-service",
+        "intro": "This is an online library website where people can sell their used books.",
         "details":[
              "I have used JWT & Firebase authentication to make the user’s data secure & MongoDB to reserve data.", "Made private routes to make different types of users with different dashboard routes. ", " Divided the product section category-wise, users can buy & sell used products.", "Added Strip as a payment gateway so that users can buy items online.", "And the admin can handle users."
     ],
@@ -30,6 +32,7 @@
         "img": "https://i.ibb.co/F8568qZ/Screenshot-3.png",
         "liveLink": "https://let-s-learn-a3e8c.web.app",
         "githubLink": "https://github.com/ajkn1904/lets-learn-client",
+        "intro": "This is an educational website from where people can buy courses.",
         "details":[
              "Firebase Authentication and private route to make user information on the website secure.", "User can buy any course, get premium access, and download the course outline as a PDF.", "API is generated as part of the back end.", "", ""
     ],
@@ -44,8 +47,9 @@
         "img": "https://i.ibb.co/FzdCTG9/Screenshot-4.png",
         "liveLink": "https://quiz-master-520aa2.netlify.app",
         "githubLink": "https://github.com/ajkn1904/quiz-master",
+        "intro": "This is a website from where one can play quizzes.",
         "details":[
-             "", "", "", "", ""
+             "It has 4 different routes. One can play quizzes on 4 topics from the quiz section.", "After clicking the options a toast will appear to show if the answer is correct or not.", "It has a view icon to view the correct answer.", "There is a graph to show statistics for the quiz topics.", "API is generated as part of the backend."
         ],
         "UiImage": [
 
@@ -58,6 +62,7 @@
         "img": "https://i.ibb.co/7G24kvw/Screenshot-5.png",
         "liveLink": "https://activity-reminder-68d1c6.netlify.app",
         "githubLink": "https://github.com/ajkn1904/activity-reminder",
+        "intro": "",
         "details":[
             "", "", "", "", ""
        ],
@@ -72,6 +77,7 @@
         "img": "https://i.ibb.co/gw71LRn/Screenshot-6.png",
         "liveLink": "https://type-monster-debug-505c43.netlify.app",
         "githubLink": "https://github.com/ajkn1904/type-monster",
+        "intro": "",
         "details":[
             "", "", "", "", ""
        ],
