@@ -14,9 +14,9 @@ const Projects = () => {
             .then(res => res.json())
             .then(data => setProjectInfo(data))
     }, [])
-    //console.log(projectInfo)
 
-   
+
+
     return (
         <section id="projects" className='pt-20 pb-32 bg-gradient-to-r from-[#7bb1a34d] to-[#ffff] font-serif' data-theme="fantasy">
 
@@ -26,30 +26,36 @@ const Projects = () => {
 
             <div className='grid grid-col-1 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-[75vw]'>
                 {
-                   projectInfo && projectInfo.map(data =>
+                    projectInfo && projectInfo.map(data =>
 
 
                         <Fade bottom key={data.id}>
                             <div className="card bg-base-100 shadow-xl image-full w-[80%] mx-auto">
                                 <figure><img src={data.img} alt="" /></figure>
                                 <div className="card-body">
-                                    <h2 className="card-title">{data.name}</h2>
-                                    <p></p>
-                                    <Link to={`/projectDetails/${data.id}`}>View More</Link>
-                                    <div className="card-actions justify-end gap-6">
-
-
-                                        <a href={data.githubLink}>
-                                            <FiGithub className='h-8 w-8 text-[#e69ceb] hover:text-[#68eac9]' />
-                                        </a>
-
-
-                                        <a href={data.liveLink}><GoLinkExternal className='h-8 w-8 text-[#e69ceb] hover:text-[#68eac9]' />
-                                        </a>
-
-
+                                    <div className='text-white rounded p-3 bg-[#0a353885]'>
+                                        <h2 className="card-title my-2 text-xl">{data.name}</h2>
+                                        <p className='my-2'>{data.intro}</p>
                                     </div>
+
+
+                                    <Fade bottom>
+                                        <div className="card-actions flex justify-between gap-3 bg-black rounded-full p-3">
+                                            <Link to={`/projectDetails/${data.id}`} className='hover:text-[#e69ceb] text-[#68eac9] tex'>View More</Link>
+
+                                            <div className='flex flex-row gap-3'>
+                                                <a href={data.githubLink}>
+                                                    <FiGithub className='h-6 w-6 hover:text-[#e69ceb] text-[#68eac9]' />
+                                                </a>
+
+
+                                                <a href={data.liveLink}><GoLinkExternal className='h-6 w-6 hover:text-[#e69ceb] text-[#68eac9]' />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </Fade>
                                 </div>
+
                             </div>
                         </Fade>
                     )

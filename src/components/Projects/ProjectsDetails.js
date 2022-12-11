@@ -52,23 +52,30 @@ const ProjectsDetails = () => {
 
                         <div className="hero min-h-screen bg-[#152c26] text-white mt-10">
                             <div className="hero-content flex-col lg:flex-row-reverse px-10">
-                                <div className='flex justify-center items-center gap-10 mb-5'>
-                                    <a href={data.githubLink}>
-                                        <FiGithub className='h-8 w-8 text-[#e69ceb] hover:text-[#68eac9]' />
-                                    </a>
 
-
-                                    <a href={data.liveLink}><GoLinkExternal className='h-8 w-8 text-[#e69ceb] hover:text-[#68eac9]' />
-                                    </a>
-
-
-                                    <Link to='/' className="btn glass h-8 bg-[#825186] hover:bg-[#68eac9] hover:text-black mt-10 mb-16">back to home</Link>
-
-
-                                </div>
 
                                 <div>
-                                    <h1 className="text-3xl font-bold">Project Details</h1>
+                                    <div className='flex justify-between items-center gap-10 mt-12'>
+                                        <h1 className="text-3xl font-bold">Project Details</h1>
+
+
+                                        <div className='flex flex-col mt-10'>
+                                            <div className='flex justify-center item-center gap-6'>
+                                                <a href={data.githubLink}>
+                                                    <FiGithub className='h-8 w-8 hover:text-[#e69ceb] text-[#68eac9]' /> REPO
+                                                </a>
+
+
+                                                <a href={data.liveLink}><GoLinkExternal className='h-8 w-8 hover:text-[#e69ceb] text-[#68eac9]' /> DEMO
+                                                </a>
+                                            </div>
+
+                                            <Link to='/' className="btn glass h-8 hover:bg-[#e69ceb] bg-[#68eac9] text-black font-bold mt-5">back to home</Link>
+
+
+                                        </div>
+                                    </div>
+
                                     <div className='py-10'>
                                         {data.details.map(point =>
                                             <p className="py-6 text-lg flex items-center"><VscDebugBreakpointData className='h-4 w-4 text-[#e69ceb]' /> <span className='ml-4'>{point}</span></p>
