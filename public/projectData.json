@@ -34,7 +34,7 @@
         "githubLink": "https://github.com/ajkn1904/lets-learn-client",
         "intro": "This is an educational website from where people can buy courses.",
         "details":[
-             "Firebase Authentication and private route to make user information on the website secure.", "User can buy any course, get premium access, and download the course outline as a PDF.", "API is generated as part of the back end.", "", ""
+             "Firebase Authentication and private route to make user information on the website secure.", "User can buy any course.", "User can download the course outline as a PDF.", "API is generated as part of the back end.", "User can get premium access after fullfil requirements that will be provided by the owner of the website"
     ],
         "UiImage": [
                 "https://i.ibb.co/j3X7k46/Screenshot-2022-12-11-at-16-23-32-Let-s-LEARN.png", "https://i.ibb.co/KwcZbsn/Screenshot-20.png", "https://i.ibb.co/0B9Zn1R/Screenshot-2022-12-11-at-16-24-15-Let-s-LEARN.png", "https://i.ibb.co/wJPtSFG/Screenshot-2022-12-11-at-16-25-48-Let-s-LEARN.png"
@@ -52,7 +52,7 @@
              "It has 4 different routes. One can play quizzes on 4 topics from the quiz section.", "After clicking the options a toast will appear to show if the answer is correct or not.", "It has a view icon to view the correct answer.", "There is a graph to show statistics for the quiz topics.", "API is generated as part of the backend."
         ],
         "UiImage": [
-
+            "", "", "", "", ""
         ]
        
     },
@@ -67,7 +67,7 @@
             "", "", "", "", ""
        ],
        "UiImage": [
-
+        "", "", "", "", ""
        ]
         
     },
@@ -82,7 +82,7 @@
             "", "", "", "", ""
        ],
        "UiImage": [
-
+        "", "", "", "", ""
        ]
         
     }

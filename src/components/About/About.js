@@ -8,7 +8,7 @@ const About = () => {
                 <div id="about" className='lg:w-[70%] mx-auto text-black'>
                     <h1 className='text-center font-bold text-4xl my-10'>ABOUT ME</h1>
                     <p>
-                        Hello! This is Anika who likes to create thing that live on the internet. My passion in web development started back in the first of 2022 when I was doing my database management project in purpose my academic education. That project taught me a lot about HTML & CSS!
+                        Hello! This is Anika who likes to create thing that live on the internet. My passion in web development started back in the first of 2022 when I was doing my 'Database Management project' in purpose of my academic education. That project taught me a lot about HTML & CSS! Though it was done using  PHP & MySQL, but now I'm very interested in doing projects using MERN. 
                     </p>
 
                     <div className='my-10'>
