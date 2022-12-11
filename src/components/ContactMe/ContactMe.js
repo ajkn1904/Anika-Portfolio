@@ -14,6 +14,7 @@ const ContactMe = () => {
             .then((result) => {
                 console.log(result.text);
                 toast.success("Message Submitted Successfully")
+                e.target.reset()
             }, (error) => {
                 console.log(error.text);
             });
@@ -22,8 +23,8 @@ const ContactMe = () => {
 
 
     return (
-        <Slide right>
-            <section className='font-serif py-16' data-theme="cupcake">
+        <section className='font-serif py-16' data-theme="cupcake">
+            <Slide right>
                 <div id="contact" className="hero min-h-screen py-10">
                     <div className="w-[85%] md:w-[70%] lg:w-[60%] flex-col">
 
@@ -56,14 +57,14 @@ const ContactMe = () => {
 
                                 </div>
                                 <div className="form-control mt-6">
-                                    <input type="submit" value="Send Message" className="btn glass bg-[#264d43] hover:text-[#e69ceb] my-4" />
+                                    <input type="submit" value="Send Message" className="btn glass bg-[#264d43] hover:text-[rgb(230,156,235)] my-4" />
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </section>
-        </Slide>
+            </Slide>
+        </section>
     );
 };
 
