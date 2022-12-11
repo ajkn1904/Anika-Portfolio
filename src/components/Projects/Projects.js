@@ -1,57 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { FiGithub } from 'react-icons/fi';
 import { GoLinkExternal } from 'react-icons/go';
+import { Link } from 'react-router-dom';
+
 
 const Projects = () => {
 
-    const projectInfo = [
-        {
-            id: 1,
-            name: "SECOND LOOK",
-            img: "https://i.ibb.co/tsDwS1r/Screenshot-1.png",
-            liveLink: "https://second-look-1e813.web.app",
-            githubLink: "https://github.com/ajkn1904/second-look"
-        },
-        {
-            id: 2,
-            name: "HOME SERVICE",
-            img: "https://i.ibb.co/hZLr0KL/Screenshot-2.png",
-            liveLink: "https://home-service-d7776.web.app",
-            githubLink: "https://github.com/ajkn1904/home-service"
-        },
-        {
-            id: 3,
-            name: "LET'S LEARN",
-            img: "https://i.ibb.co/F8568qZ/Screenshot-3.png",
-            liveLink: "https://let-s-learn-a3e8c.web.app",
-            githubLink: "https://github.com/ajkn1904/lets-learn-client"
-        },
-        {
-            id: 4,
-            name: "QUIZ MASTER",
-            img: "https://i.ibb.co/FzdCTG9/Screenshot-4.png",
-            liveLink: "https://quiz-master-520aa2.netlify.app",
-            githubLink: "https://github.com/ajkn1904/quiz-master"
-        },
-        {
-            id: 5,
-            name: "ACTIVITY REMINDER",
-            img: "https://i.ibb.co/7G24kvw/Screenshot-5.png",
-            liveLink: "https://activity-reminder-68d1c6.netlify.app",
-            githubLink: "https://github.com/ajkn1904/activity-reminder"
-        },
-        {
-            id: 6,
-            name: "TYPE MONSTER",
-            img: "https://i.ibb.co/gw71LRn/Screenshot-6.png",
-            liveLink: "https://type-monster-debug-505c43.netlify.app",
-            githubLink: "https://github.com/ajkn1904/type-monster"
-        },
+    const [projectInfo, setProjectInfo] = useState([]);
 
-    ]
+    useEffect(() => {
+        fetch('projectData.json')
+            .then(res => res.json())
+            .then(data => setProjectInfo(data))
+    }, [])
+    //console.log(projectInfo)
 
-
+   
     return (
         <section id="projects" className='pt-20 pb-32 bg-gradient-to-r from-[#7bb1a34d] to-[#ffff] font-serif' data-theme="fantasy">
 
@@ -61,7 +26,7 @@ const Projects = () => {
 
             <div className='grid grid-col-1 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-[75vw]'>
                 {
-                    projectInfo.map(data =>
+                   projectInfo && projectInfo.map(data =>
 
 
                         <Fade bottom key={data.id}>
@@ -70,6 +35,7 @@ const Projects = () => {
                                 <div className="card-body">
                                     <h2 className="card-title">{data.name}</h2>
                                     <p></p>
+                                    <Link to={`/projectDetails/${data.id}`}>View More</Link>
                                     <div className="card-actions justify-end gap-6">
 
 
