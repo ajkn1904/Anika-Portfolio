@@ -1,5 +1,4 @@
 import React from 'react';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Reveal';
 import icon1 from '../../icons/icon 1.png'
 import icon2 from '../../icons/icon 2.png'
@@ -22,53 +21,53 @@ const Skills = () => {
         <section id="skills" data-theme="cupcake" className='p-16 font-serif'>
             <Fade bottom>
             <h1 className='text-center font-bold text-4xl my-10'>My Key SKILLS</h1>
-            <div className=' w-[70%] mx-auto grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 py-12'>
+            <div className=' w-[70%] mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 py-12'>
 
-            <Flip top>
-            <img src={icon1} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon2} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon3} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon4} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon5} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon6} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon7} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon8} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon9} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon10} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon11} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon12} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon13} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon14} className='h-20 w-16' alt="" />
-            </Flip>
-            <Flip top>
-            <img src={icon15} className='h-20 w-16' alt="" />
-            </Flip>
+            
+            <img src={icon1} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon2} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon3} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon4} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon5} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon6} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon7} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon8} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon9} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon10} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon11} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon12} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon13} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon14} className='h-10 w-10' alt="" />
+            
+            
+            <img src={icon15} className='h-10 w-10' alt="" />
+            
 
             </div>
             </Fade>

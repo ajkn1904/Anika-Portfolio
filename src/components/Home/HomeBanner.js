@@ -12,20 +12,18 @@ const HomeBanner = () => {
                         <p> Hey, I'm</p>
                     </Slide>
                     <br />
-                    <span className='text-4xl font-bold hover:text-[#3b143e] text-[#2c6d5d]'>
-                        <Typewriter
+                    <span className='text-4xl font-bold hover:text-[#3b143e] text-[#2c6d5d]'>ANIKA JUMANA KHANAM NISHAT</span></h1>
+
+                <LightSpeed bottom cascade>
+                    <p>A <Typewriter
                             loop
                             cursor
                             cursorStyle='.'
-                            typeSpeed={70}
+                            typeSpeed={50}
                             deleteSpeed={50}
-                            delaySpeed={2000}
-                            words={['ANIKA JUMANA KHANAM NISHAT', ""]}
-                        />
-                    </span></h1>
-
-                <LightSpeed bottom cascade>
-                    <p>A MERN Stack Web Developer, passionate in building websites with smooth UX that leads to the goal successfully!</p>
+                            delaySpeed={1000}
+                            words={['MERN Stack Web Developer', "Front End Developer", "React Developer", "JavaScript Developer"]}
+                        /> <p>I'm passionate in building websites with smooth UX that leads to the goal successfully!</p></p>
                 </LightSpeed>
 
                 <a href='#projects' className="btn glass hover:bg-[#264d43] hover:text-[#e69ceb] bg-[#3b143e] my-4">Check out my Projects</a>

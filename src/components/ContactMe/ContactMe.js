@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
-import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Reveal';
 
 const ContactMe = () => {
 
@@ -24,7 +24,7 @@ const ContactMe = () => {
 
     return (
         <section className='font-serif py-16' data-theme="cupcake">
-            <Slide right>
+            <Fade bottom>
                 <div id="contact" className="hero min-h-screen py-10">
                     <div className="w-[85%] md:w-[70%] lg:w-[60%] flex-col">
 
@@ -63,7 +63,7 @@ const ContactMe = () => {
                         </div>
                     </div>
                 </div>
-            </Slide>
+            </Fade>
         </section>
     );
 };
