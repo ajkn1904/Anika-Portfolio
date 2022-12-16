@@ -10,9 +10,12 @@ const HomeBanner = () => {
                 <h1 className='text-2xl font-bold pt-[15vh] mb-8'>
                     <Slide top>
                         <p> Hey, I'm</p>
-                    </Slide>
+                    
                     <br />
-                    <span className='text-4xl font-bold hover:text-[#3b143e] text-[#2c6d5d]'>ANIKA JUMANA KHANAM NISHAT</span></h1>
+                    
+                    <p className='text-4xl font-bold hover:text-[#3b143e] text-[#2c6d5d]'>ANIKA JUMANA KHANAM NISHAT</p>
+                    </Slide>
+                    </h1>
 
                 <LightSpeed bottom cascade>
                     <p>A <Typewriter
