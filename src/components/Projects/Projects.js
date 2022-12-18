@@ -40,17 +40,24 @@ const Projects = () => {
 
 
                                     <Fade top>
-                                        <div className="card-actions flex justify-around items-center gap-3 bg-black rounded-full p-5">
+                                        <div className="card-actions flex flex-col sm:flex-col md:flex-row lg:flex-row justify-around items-center gap-3 bg-black rounded-full p-5">
+                                           
                                             <Link to={`/projectDetails/${data.id}`} className='hover:text-[#e69ceb] text-[#68eac9] tex'>View More</Link>
 
-                                            <div className='flex flex-col md:flex-row lg:flex-row gap-3 sm:gap-3 md:gap-3 lg:gap-3'>
+                                            
+                                            <div className='flex flex-row md:flex-row lg:flex-row gap-3 sm:gap-3 md:gap-3 lg:gap-3'>
+                                                
+                                                
                                                 <a href={data.githubLink}>
                                                     <FiGithub className='h-6 w-6 hover:text-[#e69ceb] text-[#68eac9]' />
                                                 </a>
 
 
-                                                <a href={data.liveLink}><GoLinkExternal className='h-6 w-6 hover:text-[#e69ceb] text-[#68eac9]' />
+                                                <a href={data.liveLink}>
+                                                    <GoLinkExternal className='h-6 w-6 hover:text-[#e69ceb] text-[#68eac9]' />
                                                 </a>
+                                            
+                                            
                                             </div>
                                         </div>
                                     </Fade>

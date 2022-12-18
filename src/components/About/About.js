@@ -28,7 +28,7 @@ const About = () => {
                     </div>
 
                     <p>
-                        I'm open to Job opportunities where I can contribute, learn and grow my skills more. If you have an opportunity that matches my skills and qualifications then feel free to Connect contact me anytime at my <a href='https://www.linkedin.com/in/anika-jumana-khanam' target="_blank" rel="noreferrer" className='text-blue-500'>LinkedIn</a> where I post useful content that relates to Web Development and Programming.
+                        I'm open to Job opportunities where I can contribute, learn and grow my skills more. If you have an opportunity that matches my skills and qualifications then feel free to Connect contact me anytime at my <span><a href='https://www.linkedin.com/in/anika-jumana-khanam' target="_blank" rel="noreferrer" className='text-blue-500'>LinkedIn</a></span> where I post useful content that relates to Web Development and Programming.
                     </p>
                 </div>
             </Fade>
